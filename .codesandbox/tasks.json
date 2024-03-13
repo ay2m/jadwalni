@@ -19,15 +19,17 @@
     },
     "build": {
       "name": "Build",
-      "command": "pnpm run build",
-      "runAtStart": false
+      "command": "pnpm run build"
     },
     "install": {
       "name": "Install Dependencies",
       "command": "pnpm install",
       "restartOn": {
-        "files": ["package-lock.json"],
-        "branch": false
+        "files": [
+          "package-lock.json"
+        ],
+        "branch": false,
+        "resume": false
       }
     }
   }
